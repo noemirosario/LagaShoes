@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden ;
+    background-color: #198754;
+
+}
+
+.productos{
+    color: black;
+    font-weight: bold;
+    /* margin-left: 100PX; */
+    padding: 0px 100px 0px
+}
+
+#menu a, button{
+    font-size: 18px !important;
+    font-weight: 600;
+   
+}
+
+#menu a{
+    color:#3f3f3f;
+    
+}
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+
+.carousel-inner
+{
+    max-height: 39rem;
+}
+
+.card-group{
+    margin: 70px;
+}
+
+footer {
+    background: #198754;
+    min-height: 100px;
+    margin-top: 10px black;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+
+
+#iconos i {
+    font-size: 25px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+

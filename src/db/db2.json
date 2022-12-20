@@ -1,0 +1,221 @@
+{
+  "producto": [
+    {
+      "id": "970304",
+      "name": "Yaeli Fashion",
+      "description": "Sandalia Tacon Ancho Fiesta 98496",
+      "price": 489,
+      "talla": 24,
+      "imagen": "/mujer/970304-1.jpg",
+      "iddepartamento": 1
+    },
+    {
+      "id": "1017961",
+      "name": "Vi Line",
+      "description": "Casual Sandalia Vi Line 90269026",
+      "price": 199,
+      "talla": 25,
+      "imagen": "/mujer/1017961-1.jpg",
+      "iddepartamento": 1
+    },
+    {
+      "id": "1025365",
+      "name": "Prokennex",
+      "description": "Playa/Baño Sandalia Prokennex Yj24",
+      "price": 649,
+      "talla": 25,
+      "imagen": "/mujer/1025365-1.jpg",
+      "iddepartamento": 1
+    },
+    {
+      "id": "1050830",
+      "name": "Shosh",
+      "description": "Confort Sandalia Shosh Shosh 1260",
+      "price": 399,
+      "talla": 25,
+      "imagen": "/mujer/1050830-2.jpg",
+      "iddepartamento": 1
+    },
+    {
+      "id": "1051826",
+      "name": "Nike",
+      "description": "Tenis Casual Urbano Bota Nike 6200",
+      "price": 1549,
+      "talla": 27,
+      "imagen": "/caballeros/1051826-2.jpg",
+      "iddepartamento": 2
+    },
+    {
+      "id": "1055588",
+      "name": "Charly",
+      "description": "Tenis Deportivo Correr Charly 8003",
+      "price": 799,
+      "talla": 26,
+      "imagen": "/caballeros/1055588-1.jpg",
+      "iddepartamento": 2
+    },
+    {
+      "id": "1055693",
+      "name": "Nike",
+      "description": "Tenis Casual Urbano Choclo Nike 0114",
+      "price": 1099,
+      "talla": 29,
+      "imagen": "/caballeros/1055693-1.jpg",
+      "iddepartamento": 2
+    },
+    {
+      "id": "1056755",
+      "name": "Court",
+      "description": "Tenis Deportivo Futbol Court 331h331h",
+      "price": 599,
+      "talla": 27,
+      "imagen": "/caballeros/1056755-1.jpg",
+      "iddepartamento": 2
+    },
+    {
+      "id": "1063872",
+      "name": "Nike",
+      "description": "Tenis Casual Court LegacyLegacyLegacy",
+      "price": 1449,
+      "talla": 26,
+      "imagen": "/caballeros/1063872-1.jpg",
+      "iddepartamento": 2
+    },
+    {
+      "id": "1010562",
+      "name": "Bambino",
+      "description": "Militar Botin Suela Track",
+      "price": 599,
+      "talla": 19,
+      "imagen": "/niña/1010562-1.jpg",
+      "iddepartamento": 3
+    },
+    {
+      "id": "1033753",
+      "name": "Vivis Shoes Kids",
+      "description": "Casual Sandalia Pedreria",
+      "price": 269,
+      "talla": 17,
+      "imagen": "/niña/1033753-1.jpg",
+      "iddepartamento": 3
+    },
+    {
+      "id": "977832",
+      "name": "Blasito",
+      "description": "Militar Bota Blasito",
+      "price": 499,
+      "talla": 15,
+      "imagen": "/niña/977832-1.jpg",
+      "iddepartamento": 3
+    },
+    {
+      "id": "991650",
+      "name": "Bambino",
+      "description": "Casual Sandalia Bambino",
+      "price": 419,
+      "talla": 17,
+      "imagen": "/niña/991650-1.jpg",
+      "iddepartamento": 3
+    },
+    {
+      "id": "992565",
+      "name": "Vivis Shoes Kids",
+      "description": "Casual Kit Sandalia",
+      "price": 559,
+      "talla": 15,
+      "imagen": "/niña/992565-1.jpg",
+      "iddepartamento": 3
+    },
+    {
+      "id": "1052663",
+      "name": "Mickey",
+      "description": "Tenis Casual Choclo Escolar",
+      "price": 529,
+      "talla": 17,
+      "imagen": "/niño/1052663-1.jpg",
+      "iddepartamento": 4
+    },
+    {
+      "id": "1056827",
+      "name": "Buzz Lightyear",
+      "description": "Tenis Urbano Con Luces",
+      "price": 609,
+      "talla": 16,
+      "imagen": "/niño/1056827-1.jpg",
+      "iddepartamento": 4
+    },
+    {
+      "id": "1057073",
+      "name": "Urban Shoes",
+      "description": "Tenis Urbano Kit Sport",
+      "price": 539,
+      "talla": 18,
+      "imagen": "/niño/1057073-1.jpg",
+      "iddepartamento": 4
+    },
+    {
+      "id": "1057082",
+      "name": "Urban Shoes",
+      "description": "Tenis Urbano Con Plastisol",
+      "price": 489,
+      "talla": 15,
+      "imagen": "/niño/1057082-1.jpg",
+      "iddepartamento": 4
+    },
+    {
+      "id": "1058029",
+      "name": "Adidas",
+      "description": "Tenis Casual Advantage",
+      "price": 999,
+      "talla": 17,
+      "imagen": "/niño/1058029-1.jpg",
+      "iddepartamento": 4
+    },
+    {
+      "id": "1026113",
+      "name": "Banana Price",
+      "description": "Sandalia Baño Monocolor Monocolor",
+      "price": 229,
+      "talla": 25,
+      "imagen": "/mujer/1026113-1.jpg",
+      "iddepartamento": 1
+    }
+  ],
+  "carrito": [
+    {
+      "id": 1055588,
+      "price": 799,
+      "name": "Charly",
+      "imagen": "/caballeros/1055588-1.jpg",
+      "description": "Tenis Deportivo Correr Charly 8003"
+    },
+    {
+      "id": 1017961,
+      "price": 199,
+      "name": "Vi Line",
+      "imagen": "/mujer/1017961-1.jpg",
+      "description": "Casual Sandalia Vi Line 90269026"
+    },
+    {
+      "id": 1025365,
+      "price": 649,
+      "name": "Prokennex",
+      "imagen": "/mujer/1025365-1.jpg",
+      "description": "Playa/Baño Sandalia Prokennex Yj24"
+    },
+    {
+      "id": 1050830,
+      "price": 399,
+      "name": "Shosh",
+      "imagen": "/mujer/1050830-2.jpg",
+      "description": "Confort Sandalia Shosh Shosh 1260"
+    },
+    {
+      "id": 991650,
+      "price": 419,
+      "name": "Bambino",
+      "imagen": "/niña/991650-1.jpg",
+      "description": "Casual Sandalia Bambino"
+    }
+  ]
+}

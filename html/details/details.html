@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zapatos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/489d83f342.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="../main/style.css">
+
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script defer type="module" src="./../../src/details.js"></script>
+
+
+    <script>
+      let articulos = "";
+
+
+        // fetch("http://localhost:3000/producto", {method: "GET"}).then(response => {console.log(response.json())})
+        fetch("http://localhost:3000/producto", {method: "GET"}).then(response => response.json()).then(
+          data => {
+            data.forEach(element => {
+              // para ver que se pinten cada uno --- console.log(element)
+              let cadena = `
+              <div class="row">
+              <div class="col-lg-5 mt-5">
+                <div class="card mb-0">
+                        <img class="card-img img-fluid" src="../../Imagenes${element.imagen}" alt="Card image cap" id="product-detail">
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hola">
+                  <div class="ps-lg-8 mt-6 mt-lg-0">
+                    <!-- <div class="header-shoes"> -->
+                      <a href="#" class="mb-4 d-block fs-4 text-success">${element.name}</a>
+                      <h2 class="mb-1 h1">${element.description}</h2>
+                      <div class="mb-4">
+                        <small class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </small>
+                        <a href="#" class="ms-2 text-success">(30 reviews)</a>
+                      </div>
+                      <div class="fs-4">
+                        <span class="fw-bold text-success fw-bold">${element.price}</span>
+                      </div>
+
+                      
+                    <!-- </div> -->
+                    
+                    <hr class="my-6">
+                    <div class="Size">
+                    <div class="row">
+                      <div class="size">
+                      <div class="col-auto">
+                          <ul class="list-inline pb-3">
+                              <li class="list-inline-item">Talla disponible:
+                                  <input type="hidden" name="product-size" id="product-size" value="">
+                              </li>
+                              <li class="list-inline-item">
+                                <span class="btn btn-success btn-size">${element.talla}</span>
+                              </li>
+                          </ul>
+                      </div>
+
+                      <div class="col-auto">
+                        <ul class="list-inline pb-3">
+                           
+                        </ul>
+                      </div>
+                    </div> 
+                  </div>
+
+
+                    <div class="mt-3 row justify-content-start g-2 align-items-center">
+                      <div class="row pb-3">          
+                        <div class="col d-grid">
+                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Agregar a la bolsa</button>
+                        </div>
+                    </div>
+                      <div class="col-md-4 col-5">
+                      </div>
+                    </div>
+                    <!-- <hr class="my-6"> -->
+                    <div class="shoes-details">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>ID:</td>
+                            <td>${element.id}</td>
+                          </tr>
+                          <tr>
+                            <td>Marca:</td>
+                            <td>${element.name}</td>
+                          </tr>
+                          <tr>
+                            <td>Descripcion:</td>
+                            <td>${element.description}</td>
+                          </tr>
+                          <tr>
+                            <td>Entregas en:</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              `
+
+              switch (element.id)
+              {
+                case 1:
+                  articulos += cadena;
+                  break;
+              }
+            });
+
+            // console.log(divDama)
+
+             document.getElementById("seccion").innerHTML = articulos;
+          }
+        )  
+    </script>
+
+    
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=5215626983&text=Hola%2C%20me%20interesa%20vender%20en%20LagaShoes%20%F0%9F%A6%8E" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 bg" id="menu">
+        <div class="container">
+          <a class="navbar-brand " href="./../../html/main/index.html">
+
+            <span class="text-success fs-6 fw-bold">LagaShoes</span>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./../../html/main/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./../main/index.html#intro">Nosotros</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./../main/index.html#mujer">Dama</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./../main/index.html#caballeros">Caballeros</a></li>
+                  
+                  <li><a class="dropdown-item" href="./../main/index.html#niña">Niña</a></li>
+                  <a class="dropdown-item" href="./../main/index.html#niño">Niño</a>
+                </li>
+                
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./../main/index.html#contenedor-formulario">Contacto</a>
+              </li>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="seccion">
+        <div class="container pb-6 detalles">
+         <div class="row">
+              <div class="col-lg-5 mt-5">
+                <div class="card mb-0">
+                        <img class="card-img img-fluid" src="../../Imagenes/noimage.png" alt="Card image cap" id="product-detail">
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hola">
+                  <div class="ps-lg-8 mt-6 mt-lg-0"> 
+                    <!-- <div class="header-shoes"> -->
+                      <a href="#" class="mb-4 d-block fs-4 text-success">MARCA</a>
+                      <h2 class="mb-1 h1">Descripcion</h2>
+                      <div class="mb-4">
+                        <small class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                        </small>
+                        <a href="#" class="ms-2 text-success">(30 reviews)</a>
+                      </div>
+                      <div class="fs-4">
+                        <span class="fw-bold text-success fw-bold">Precio</span>
+                      </div>
+
+
+                    <!-- </div> -->
+                    
+                    <hr class="my-6">
+                    <div class="Size">
+                    <div class="row">
+                      <div class="size">
+                      <div class="col-auto">
+                          <ul class="list-inline pb-3">
+                              <li class="list-inline-item">Talla disponible:
+                                  <input type="hidden" name="product-size" id="product-size" value="">
+                              </li>
+                              <li class="list-inline-item">
+                                <span class="btn btn-success btn-size">24</span>
+                              </li>
+                          </ul>
+                      </div>
+
+                      <div class="col-auto">
+                        <ul class="l ist-inline pb-3">
+                           
+                        </ul>
+                      </div>
+                    </div> 
+                  </div>
+
+
+                    <div class="mt-3 row justify-content-start g-2 align-items-center">
+                      <div class="row pb-3">          
+                        <div class="col d-grid">
+                            <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Agregar a la bolsa</button>
+                        </div>
+                    </div>
+                      <div class="col-md-4 col-5">
+                      </div>
+                    </div>
+                    <!-- <hr class="my-6"> -->
+                    <div class="shoes-details">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td>ID:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Marca:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Descripcion:</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Entregas en:</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
+       
+
+      <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap ">
+        <p class="fs-5 px-3 pt-3">Noemi Rosario, Dylan Abner &copy; LagaShoes 2022</p>
+        <div id="iconos">
+          <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/noemi.rosarioescobar12" 
+          target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/dylanabner.silvaaraujo.7" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+      </footer>
+
+
+      
+</body>
+</html>
